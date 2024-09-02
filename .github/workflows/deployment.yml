@@ -1,5 +1,6 @@
 name: Vercel Production Deployment
 
+# Note: Create new project in Vercel and get the ORG_ID and PROJECT_ID (Required)
 env:
     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
@@ -7,7 +8,7 @@ env:
 on:
     push:
         branches:
-            - main
+            - master
 
 jobs:
     Deploy-Production:
